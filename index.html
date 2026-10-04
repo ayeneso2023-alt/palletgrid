@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PalletGrid: Paletizado 3D — Optimización y Cubicaje Logístico UNE/ISO</title>
-  <meta name="description" content="Herramienta profesional de ingeniería logística para optimización de cubicaje de palets, cálculo de mosaicos ≥ 80%, simulación 3D y estabilidad física UNE-EN 13698.">
-  <link rel="icon" type="image/png" href="assets/app-icon.png">
+  <title>PalletGrid — Optimizador de Paletizado 3D y Cubicaje Logístico</title>
+  <meta name="description" content="PalletGrid es la herramienta profesional de ingeniería logística para optimización de estiba sobre palets normalizados UNE-EN 13698, cálculo de mosaicos ≥ 80%, visor 3D y fichas técnicas A4.">
   <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
 </head>
 <body>
 
-  <!-- NAVBAR -->
+  <!-- HEADER / NAVBAR -->
   <header class="navbar">
     <div class="container nav-wrap">
       <a href="index.html" class="nav-brand">
-        <img src="assets/app-icon.png" alt="PalletGrid Logo" class="nav-logo">
+        <img src="assets/app-icon.png" alt="PalletGrid Icon" class="nav-logo">
         <div>
           <div class="nav-title">PalletGrid</div>
           <div class="nav-subtitle">by Jacoor Logística</div>
@@ -22,13 +22,13 @@
       </a>
       <ul class="nav-menu">
         <li><a href="#features" class="nav-link">Características</a></li>
-        <li><a href="#standards" class="nav-link">Normativa UNE</a></li>
+        <li><a href="#normativas" class="nav-link">Normativas UNE</a></li>
         <li><a href="#gallery" class="nav-link">Capturas</a></li>
         <li><a href="support.html" class="nav-link">Soporte</a></li>
         <li><a href="privacy.html" class="nav-link">Privacidad</a></li>
       </ul>
       <a href="#download" class="nav-btn">
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.66-1.09 1.73-.95 2.76 1.01.08 2.05-.51 2.68-1.26z"/></svg>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
         App Store
       </a>
     </div>
@@ -38,38 +38,34 @@
   <section class="hero">
     <div class="hero-glow"></div>
     <div class="container hero-grid">
-      <div>
+      <div class="hero-content">
         <div class="hero-tag">
           <div class="hero-tag-pulse"></div>
-          INGENIERÍA LOGÍSTICA & ESTIBA INDUSTRIAL
+          INGENIERÍA LOGÍSTICA INDUSTRIAL V3
         </div>
         <h1 class="hero-title">
-          Optimiza tus palets con <span>precisión milimétrica</span> y estabilidad certificada
+          Optimizador de Paletizado 3D y <span>Cubicaje UNE</span>
         </h1>
         <p class="hero-lead">
-          Calcula en segundos mosaicos óptimos con ocupación ≥ 80%, simula el cruce de juntas con Capa B capitulada en 3D interactivo y exporta fichas técnicas oficiales A4 conformes a la norma UNE-EN 13698.
+          Calcula al instante los mejores mosaicos de carga con ocupación ≥ 80%, simula la traba de Capa B en 3D interactivo y genera fichas técnicas vectoriales oficiales DIN A4 para almacén y transporte.
         </p>
         <div class="hero-actions">
           <a href="#download" class="btn-primary">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.66-1.09 1.73-.95 2.76 1.01.08 2.05-.51 2.68-1.26z"/></svg>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.62-.75 1.04-1.8 1.01-2.84-.96.04-2.13.64-2.79 1.41-.58.68-1.1 1.77-1.02 2.81 1.08.08 2.18-.63 2.8-1.38z"/></svg>
             Disponible en App Store
           </a>
-          <a href="#features" class="btn-secondary">
-            Ver Características
+          <a href="support.html" class="btn-secondary">
+            Centro de Soporte →
           </a>
         </div>
         <div class="hero-badges">
           <div class="badge-item">
             <span class="badge-val">≥ 80%</span>
-            <span class="badge-lbl">Filtro Ocupación Mínima</span>
+            <span class="badge-lbl">Filtro de Ocupación</span>
           </div>
           <div class="badge-item">
             <span class="badge-val">UNE-EN</span>
             <span class="badge-lbl">13698-1 / 13698-2</span>
-          </div>
-          <div class="badge-item">
-            <span class="badge-val">360°</span>
-            <span class="badge-lbl">Visor 3D Interactivo</span>
           </div>
           <div class="badge-item">
             <span class="badge-val">100%</span>
@@ -79,7 +75,7 @@
       </div>
       <div class="hero-mockup-wrap">
         <div class="hero-mockup-glow"></div>
-        <img src="assets/02_Visor_3D_Explosion.png" alt="PalletGrid 3D Viewer" class="hero-mockup-img">
+        <img src="assets/01_Visor_3D_Explosion.png" alt="PalletGrid 3D Isométrico Mockup" class="hero-mockup-img">
       </div>
     </div>
   </section>
@@ -88,147 +84,147 @@
   <section class="section" id="features">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">TECNOLOGÍA APLICADA A LA CADENA DE SUMINISTRO</span>
-        <h2 class="section-title">Diseñado para la máxima eficiencia y seguridad en muelle</h2>
-        <p class="section-desc">Cada función de PalletGrid responde a una necesidad crítica de los ingenieros de packaging, jefes de almacén y responsables de operaciones.</p>
+        <span class="section-tag">Capacidades Técnicas</span>
+        <h2 class="section-title">Diseñado para la Cadena de Suministro Exigente</h2>
+        <p class="section-desc">Tecnología de cálculo geométrico y simulación física que garantiza palets estables, homologados y con máxima rentabilidad de flete.</p>
       </div>
-
       <div class="features-grid">
+        
         <div class="feature-card">
-          <div class="feature-icon-box">★</div>
-          <h3 class="feature-title">Asistente Guiado Paso a Paso</h3>
-          <p class="feature-desc">Configura nuevos paletizados en 2 sencillos pasos introduciendo el producto, cotas exteriores de la caja, peso y tipo de tarima normalizada.</p>
+          <div class="feature-icon-box">⭐</div>
+          <h3 class="feature-title">Asistente Guiado Inteligente</h3>
+          <p class="feature-desc">Flujo asistido paso a paso para dar de alta productos, dimensiones exteriores de cajas, peso neto y elección de tarima con tolerancia milimétrica.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-box">📐</div>
-          <h3 class="feature-title">Filtro de Ocupación ≥ 80%</h3>
-          <p class="feature-desc">El motor geométrico descarta automáticamente patrones ineficientes y ofrece solo variantes de alta densidad: transversal, longitudinal, mixtos y molinillos.</p>
+          <h3 class="feature-title">Mosaicos con Ocupación ≥ 80%</h3>
+          <p class="feature-desc">Filtro riguroso que descarta patrones ineficientes. Genera opciones longitudinales, transversales, mixtas de 2 y 3 bloques y molinillos con chimenea.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box">🧱</div>
+          <h3 class="feature-title">Capitulado Automático (Capa B)</h3>
+          <p class="feature-desc">Diseño geométrico de cruce de juntas verticales entre pisos impares y pares (traba física), evitando colapsos y fracturas de carga en carretera.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-box">🛡️</div>
-          <h3 class="feature-title">Traba Capitulada (Capa B)</h3>
-          <p class="feature-desc">Genera la rotación o espejo de cajas entre pisos para cruzar las juntas verticales, evitando que la carga se abra en columnas durante el transporte en camión.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-box">⚠️</div>
-          <h3 class="feature-title">Tolerancia de Saliente Milimétrica</h3>
-          <p class="feature-desc">Permite evaluar salientes perimetrales de hasta 20 mm (+2 cm en total), indicando la cota exacta en milímetros para evitar rechazos en muelle.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-box">⚖️</div>
-          <h3 class="feature-title">Auditoría Física UNE-EN 13698</h3>
-          <p class="feature-desc">Calcula con precisión el Centro de Gravedad Z, la Relación de Esbeltez (&lambda; &le; 1.8) y el Ángulo Crítico de Vuelco (&theta;) con dictamen de homologación.</p>
+          <h3 class="feature-title">Auditoría Física y Estabilidad</h3>
+          <p class="feature-desc">Cálculo exacto del Centro de Gravedad Z (Z_cdg), índice de esbeltez (λ ≤ 1.8) y ángulo crítico de vuelco estático (θ) según estándares UNE.</p>
         </div>
 
         <div class="feature-card">
           <div class="feature-icon-box">📦</div>
-          <h3 class="feature-title">Visor 3D y Explosión de Capas</h3>
-          <p class="feature-desc">Inspecciona el palet y las cajas en 360 grados con renderizado fotorrealista limpio. Separa los pisos en altura para auditar cada nivel.</p>
+          <h3 class="feature-title">Visor Isométrico 3D Limpio</h3>
+          <p class="feature-desc">Inspección táctil 360° con deslizador de explosión de capas en altura. Muestra únicamente la madera del palet y las cajas sin números que distraigan.</p>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon-box">📁</div>
-          <h3 class="feature-title">Gestor Local de Fichas Creadas</h3>
-          <p class="feature-desc">Accede desde el dock simétrico a todo tu historial de expediciones guardadas. Busca rápidamente por producto, código o fecha.</p>
+          <div class="feature-icon-box">📑</div>
+          <h3 class="feature-title">Ficha Técnica Oficial A4 en PDF</h3>
+          <p class="feature-desc">Genera dossiers de expedición de almacén listos para imprimir mediante AirPrint, compartir por AirDrop o archivar con sello de calidad y cotas de alzado.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- NORMATIVAS / STANDARDS SECTION -->
+  <section class="section" id="normativas" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Estándares Internacionales</span>
+        <h2 class="section-title">Compatibilidad con Palets Normalizados</h2>
+        <p class="section-desc">PalletGrid integra las medidas oficiales, pesos de tara y alturas de madera reglamentarias.</p>
+      </div>
+
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 32px;">
+        <div class="feature-card" style="border-color: rgba(16, 185, 129, 0.4);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-size: 28px;">🇪🇺</span>
+            <span style="background: rgba(16, 185, 129, 0.15); color: var(--primary-light); font-weight: 800; font-size: 11px; padding: 4px 10px; border-radius: 12px;">ESTÁNDAR EUROPEO</span>
+          </div>
+          <h3 class="feature-title">Europalet UNE-EN 13698-1</h3>
+          <p class="feature-desc" style="margin-bottom: 20px;">Tarima homologada EPAL para la cadena logística y de gran distribución en Europa.</p>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 14px; line-height: 2;">
+            <li>✓ <strong>Dimensiones nominales:</strong> 1200 × 800 mm</li>
+            <li>✓ <strong>Altura de madera:</strong> 145 mm (3 patines y 9 tacos)</li>
+            <li>✓ <strong>Tara oficial:</strong> 25.0 kg</li>
+            <li>✓ <strong>Tolerancia de saliente:</strong> Hasta +20 mm evaluable</li>
+          </ul>
         </div>
 
         <div class="feature-card">
-          <div class="feature-icon-box">📄</div>
-          <h3 class="feature-title">Dossier Oficial en PDF (DIN A4)</h3>
-          <p class="feature-desc">Exporta fichas técnicas formales con cotas en alzado, esquemas en planta y sello de calidad listas para AirPrint, AirDrop o Archivos.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-box">🌍</div>
-          <h3 class="feature-title">Multilingüe y 100% Privado</h3>
-          <p class="feature-desc">Disponible en Español, Inglés, Francés, Alemán, Italiano y Portugués. Funciona sin conexión a internet y no recopila ningún dato.</p>
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-size: 28px;">🇺🇸</span>
+            <span style="background: rgba(255, 255, 255, 0.1); color: var(--text-main); font-weight: 800; font-size: 11px; padding: 4px 10px; border-radius: 12px;">ESTÁNDAR UNIVERSAL</span>
+          </div>
+          <h3 class="feature-title">Palet Americano UNE-EN 13698-2</h3>
+          <p class="feature-desc" style="margin-bottom: 20px;">Tarima industrial ISO 6780 universal utilizada ampliamente en distribución internacional.</p>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 14px; line-height: 2;">
+            <li>✓ <strong>Dimensiones nominales:</strong> 1200 × 1000 mm</li>
+            <li>✓ <strong>Altura de madera:</strong> 150 mm</li>
+            <li>✓ <strong>Tara oficial:</strong> 30.0 kg</li>
+            <li>✓ <strong>Capacidad de carga:</strong> Alta densidad volumétrica</li>
+          </ul>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- GALLERY SECTION -->
-  <section class="section" id="gallery" style="background: rgba(255,255,255,0.01);">
+  <!-- GALLERY / SCREENSHOTS SECTION -->
+  <section class="section" id="gallery">
     <div class="container">
       <div class="section-head">
-        <span class="section-tag">GALERÍA DE LA APLICACIÓN</span>
-        <h2 class="section-title">Una experiencia visual, técnica e intuitiva</h2>
-        <p class="section-desc">Diseñada con estándares de interfaz iOS Human Interface Guidelines para máxima productividad táctil en planta y oficina.</p>
+        <span class="section-tag">Galería de la Aplicación</span>
+        <h2 class="section-title">Capturas Reales de PalletGrid V3</h2>
+        <p class="section-desc">Interfaz refinada, intuitiva y diseñada específicamente para el entorno operativo en iPhone e iPad.</p>
       </div>
 
       <div class="gallery-wrap">
         <div class="gallery-card">
-          <img src="assets/01_Mosaicos_2D_Ocupacion80.png" alt="Mosaicos 2D Reales" class="gallery-thumb">
-          <div class="gallery-caption">Mosaicos 2D Reales</div>
-          <div class="gallery-sub">Ocupación ≥ 80% y Saliente en mm</div>
+          <img src="assets/01_Visor_3D_Explosion.png" alt="Visor 3D Isométrico" class="gallery-thumb">
+          <div class="gallery-caption">Visor 3D Interactivo</div>
+          <div class="gallery-sub">Explosión de capas y giro 360°</div>
         </div>
 
         <div class="gallery-card">
-          <img src="assets/02_Visor_3D_Explosion.png" alt="Visor Isométrico 3D" class="gallery-thumb">
-          <div class="gallery-caption">Visor 3D y Explosión</div>
-          <div class="gallery-sub">Inspección de capas en 360°</div>
+          <img src="assets/02_Dossier_Ficha_Tecnica_PDF.png" alt="Ficha Técnica PDF A4" class="gallery-thumb">
+          <div class="gallery-caption">Ficha Técnica A4 (PDF)</div>
+          <div class="gallery-sub">Planos de estiba, alzados y sello</div>
         </div>
 
         <div class="gallery-card">
-          <img src="assets/03_Asistente_Guiado_Nuevo_Pallet.png" alt="Asistente Guiado" class="gallery-thumb">
+          <img src="assets/03_Mosaicos_2D_Ocupacion80.png" alt="Mosaicos 2D Reales" class="gallery-thumb">
+          <div class="gallery-caption">Mosaicos 2D (≥ 80%)</div>
+          <div class="gallery-sub">Cálculo de saliente y KPIs en mm</div>
+        </div>
+
+        <div class="gallery-card">
+          <img src="assets/04_Asistente_Guiado_Nuevo_Pallet.png" alt="Asistente Guiado" class="gallery-thumb">
           <div class="gallery-caption">Asistente Guiado</div>
-          <div class="gallery-sub">Configuración paso a paso</div>
+          <div class="gallery-sub">Conversión mm/in, kg/lb y Europalet</div>
         </div>
 
         <div class="gallery-card">
-          <img src="assets/04_Dossier_Ficha_Tecnica_PDF.png" alt="Ficha Técnica PDF A4" class="gallery-thumb">
-          <div class="gallery-caption">Ficha Técnica A4</div>
-          <div class="gallery-sub">Exportación oficial en PDF</div>
-        </div>
-
-        <div class="gallery-card">
-          <img src="assets/05_Gestor_Fichas_Guardadas.png" alt="Gestor de Fichas" class="gallery-thumb">
+          <img src="assets/05_Gestor_Fichas_Guardadas.png" alt="Gestor de Fichas Guardadas" class="gallery-thumb">
           <div class="gallery-caption">Fichas Guardadas</div>
-          <div class="gallery-sub">Historial local con buscador</div>
+          <div class="gallery-sub">Historial local y reapertura 3D</div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- STANDARDS SECTION -->
-  <section class="section" id="standards">
+  <!-- CTA / DOWNLOAD SECTION -->
+  <section class="section" id="download" style="text-align: center;">
     <div class="container">
-      <div class="section-head">
-        <span class="section-tag">ESTÁNDARES INTERNACIONALES HOMOLOGADOS</span>
-        <h2 class="section-title">Soporte nativo para palets normalizados</h2>
-      </div>
-
-      <div class="features-grid" style="grid-template-columns: 1fr 1fr; max-width: 900px; margin: 0 auto;">
-        <div class="feature-card">
-          <div class="feature-icon-box">🇪🇺</div>
-          <h3 class="feature-title">Europalet Normalizado</h3>
-          <p class="feature-desc" style="font-weight: 700; color: var(--primary-light); margin-bottom: 8px;">UNE-EN 13698-1 • ISO 445</p>
-          <p class="feature-desc">Medidas de 1200 × 800 mm, madera de 145 mm de altura y tara nominal de 25.0 kg. El estándar indiscutible de la distribución y logística europea.</p>
-        </div>
-
-        <div class="feature-card">
-          <div class="feature-icon-box">🇺🇸</div>
-          <h3 class="feature-title">Palet Americano / Universal</h3>
-          <p class="feature-desc" style="font-weight: 700; color: var(--primary-light); margin-bottom: 8px;">UNE-EN 13698-2 • ISO 6780</p>
-          <p class="feature-desc">Medidas de 1200 × 1000 mm, madera de 150 mm de altura y tara nominal de 30.0 kg. Empleado internacionalmente para gran consumo, bebidas y químicos.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- DOWNLOAD CTA -->
-  <section class="section" id="download">
-    <div class="container">
-      <div class="contact-box">
-        <h3>Comienza a optimizar tus cargas hoy</h3>
-        <p>Lleva en tu iPhone o iPad el cálculo de cubicaje más avanzado, riguroso y respetuoso con tu privacidad.</p>
-        <a href="https://apps.apple.com/app/id" class="contact-mail-btn" target="_blank" rel="noopener">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.37c.62-.75 1.04-1.8 0.92-2.85-.9.04-2 .6-2.65 1.35-.58.66-1.09 1.73-.95 2.76 1.01.08 2.05-.51 2.68-1.26z"/></svg>
-          Descargar PalletGrid en App Store
+      <div class="contact-box" style="margin: 0 auto;">
+        <h3>Empieza a optimizar tus cargas hoy</h3>
+        <p>Disponible para iPhone e iPad en la App Store de Apple. Sin registro obligatorio, sin publicidad y 100% privado.</p>
+        <a href="https://apps.apple.com" target="_blank" class="contact-mail-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.62-.75 1.04-1.8 1.01-2.84-.96.04-2.13.64-2.79 1.41-.58.68-1.1 1.77-1.02 2.81 1.08.08 2.18-.63 2.8-1.38z"/></svg>
+          Descargar en App Store
         </a>
       </div>
     </div>
@@ -240,34 +236,35 @@
       <div class="footer-grid">
         <div class="footer-brand">
           <div class="nav-brand">
-            <img src="assets/app-icon.png" alt="PalletGrid Logo" class="nav-logo" style="width: 34px; height: 34px;">
-            <span class="nav-title" style="font-size: 18px;">PalletGrid</span>
+            <img src="assets/app-icon.png" alt="PalletGrid Logo" class="nav-logo">
+            <div>
+              <div class="nav-title">PalletGrid</div>
+              <div class="nav-subtitle">by Jacoor Logística</div>
+            </div>
           </div>
-          <p>Herramienta profesional de ingeniería logística y optimización de estiba sobre palets normalizados UNE-EN 13698.</p>
+          <p>Herramienta técnica de ingeniería de estiba, cubicaje volumétrico y optimización de palets normalizados para la industria logística y transporte.</p>
         </div>
-
         <div class="footer-col">
-          <h4>Soporte & Legal</h4>
+          <h4>Navegación</h4>
+          <ul>
+            <li><a href="#features">Características</a></li>
+            <li><a href="#normativas">Normativas UNE</a></li>
+            <li><a href="#gallery">Capturas de Pantalla</a></li>
+            <li><a href="#download">Descarga App Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal y Contacto</h4>
           <ul>
             <li><a href="support.html">Centro de Soporte</a></li>
             <li><a href="privacy.html">Política de Privacidad</a></li>
-            <li><a href="support.html#faq">Preguntas Frecuentes</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-col">
-          <h4>Contacto</h4>
-          <ul>
-            <li><a href="mailto:ayeneso2023@gmail.com">ayeneso2023@gmail.com</a></li>
-            <li><a href="mailto:soporte@jacoor.com">soporte@jacoor.com</a></li>
-            <li><span style="color: var(--text-dim);">Jacoor Logística</span></li>
+            <li><a href="mailto:ayeneso2023@gmail.com">Contacto por Email</a></li>
           </ul>
         </div>
       </div>
-
       <div class="footer-bottom">
-        <div>&copy; 2026 Jacoor Logística / ayeneso2023. Todos los derechos reservados.</div>
-        <div>Compatible con iOS 15.0+ y iPadOS 15.0+</div>
+        <div>© 2026 Jacoor Logística. Todos los derechos reservados.</div>
+        <div>Cumple directrices de Apple App Store Review Guidelines.</div>
       </div>
     </div>
   </footer>
