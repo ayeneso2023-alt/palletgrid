@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Official Support — PalletGrid</title>
+  <meta name="description" content="Official technical support center, assistance and FAQ for PalletGrid on iOS & iPadOS.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="index-en.html" class="nav-brand">
+        <img src="assets/app-icon.png" alt="PalletGrid Icon" class="nav-logo">
+        <div>
+          <div class="nav-title">PalletGrid</div>
+          <div class="nav-subtitle">Support Center</div>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index-en.html" class="nav-link">Home / Marketing</a></li>
+        <li><a href="support-en.html" class="nav-link active">Support</a></li>
+        <li><a href="privacy.html" class="nav-link">Privacy</a></li>
+        <li>
+          <span style="color: var(--primary-light); font-weight: 700; font-size: 13px;">🌐 EN</span>
+          <a href="soporte.html" style="font-size: 12px; color: var(--text-muted); margin-left: 4px;">ES</a>
+          <a href="support-de.html" style="font-size: 12px; color: var(--text-muted); margin-left: 4px;">DE</a>
+          <a href="support-fr.html" style="font-size: 12px; color: var(--text-muted); margin-left: 4px;">FR</a>
+        </li>
+      </ul>
+      <a href="index-en.html#download" class="nav-btn">
+        App Store
+      </a>
+    </div>
+  </header>
+
+  <!-- SUPPORT CONTENT -->
+  <main class="legal-page">
+    <div class="container">
+      <div class="legal-header">
+        <span class="section-tag">Official Help & Contact</span>
+        <h1 class="legal-title">How can we assist you with PalletGrid?</h1>
+        <p class="legal-meta">Official user help desk and technical incident resolution • Developed by Jacoor Logistics</p>
+      </div>
+
+      <!-- DIRECT CONTACT CARD -->
+      <div class="contact-box" style="margin: 0 0 60px 0; text-align: left; display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 32px; align-items: center;">
+        <div>
+          <h2 style="font-size: 26px; font-weight: 900; margin-bottom: 12px; color: #FFFFFF;">Direct Technical Support</h2>
+          <p style="color: var(--text-muted); font-size: 15px; margin-bottom: 20px;">
+            Whether you have operational questions, need to report an edge case, or require help with pallet sheet compliance, our engineering support team is here to assist you.
+          </p>
+          <div style="color: var(--text-main); font-size: 14px; line-height: 2;">
+            <div>📧 <strong>Support Email:</strong> <a href="mailto:ayeneso2023@gmail.com?subject=PalletGrid%20Support%20iOS" style="color: var(--primary-light); text-decoration: underline;">ayeneso2023@gmail.com</a></div>
+            <div>⏱️ <strong>Estimated Response Time:</strong> Under 24 business hours.</div>
+            <div>🏢 <strong>Developer / Rights Holder:</strong> Jose Antonio Corrales Ortega (Jacoor Logistics)</div>
+          </div>
+        </div>
+        <div style="text-align: center;">
+          <a href="mailto:ayeneso2023@gmail.com?subject=PalletGrid%20Support%20iOS" class="contact-mail-btn" style="width: 100%; justify-content: center;">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Support Team
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ SECTION -->
+      <div class="legal-body">
+        <h2 style="font-size: 28px; margin-bottom: 24px;">Frequently Asked Questions (FAQ)</h2>
+        <div class="faq-list">
+          <div class="faq-item">
+            <h3 class="faq-q"><span>Q1.</span> What pallet standards and custom sizes are supported?</h3>
+            <p class="faq-a">
+              PalletGrid natively supports:
+              <br>• <strong>Euro Pallet UNE-EN 13698-1</strong> (1200 × 800 mm, wood 145 mm, tare 25.0 kg).
+              <br>• <strong>American / ISO Pallet UNE-EN 13698-2</strong> (1200 × 1000 mm, wood 150 mm, tare 30.0 kg).
+              <br>• <strong>Half Pallet (Display)</strong> (800 × 600 mm, wood 140 mm, tare 15.0 kg).
+              <br>• <strong>Custom Pallets:</strong> Input any length, width, wood deck height, and tare weight.
+              <br>Includes instantaneous conversion between millimeters ⇄ inches and kilograms ⇄ pounds.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q"><span>Q2.</span> Why do some patterns display a ⚠️ badge with overhang mm?</h3>
+            <p class="faq-a">
+              In real-world logistics, certain box geometries slightly exceed standard pallet edges. When you enable the <em>"Allow overhang up to +20 mm"</em> toggle, our solver evaluates high-efficiency patterns that make use of that margin. The ⚠️ badge specifies exact overhang on length and width so the warehouse supervisor can approve it against trailer or rack clearances.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q"><span>Q3.</span> What is Layer B and why is interlocking necessary?</h3>
+            <p class="faq-a">
+              Stacking boxes identically layer over layer creates continuous vertical columns prone to tipping under road vibration or braking. <strong>Interlocked Layer B</strong> rotates or mirrors the layout on even floors, brick-bonding the stack into a cohesive structural unit.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q"><span>Q4.</span> How do I export or print the official PDF Technical Sheet?</h3>
+            <p class="faq-a">
+              From the <em>Technical Sheet</em> tab, tap <strong>"Download PDF Sheet"</strong>. The native iOS / iPadOS share sheet will open, allowing you to:
+              <br>• Print via <strong>AirPrint</strong> directly to any network printer.
+              <br>• Share via <strong>AirDrop</strong> to Mac or nearby devices.
+              <br>• Send as an attachment via Mail, WhatsApp, or cloud storage (Files, iCloud Drive).
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3 class="faq-q"><span>Q5.</span> Does PalletGrid require an internet connection or user account?</h3>
+            <p class="faq-a">
+              <strong>No.</strong> PalletGrid is 100% offline and operates entirely on your device. All calculations, 3D simulations, and saved technical sheets remain confidential on your iPhone or iPad. No telemetry, no third-party tracking, and zero advertising.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom" style="border: none;">
+      <div>© 2026 Jacoor Logistics. All rights reserved.</div>
+      <div>Support & Inquiries: ayeneso2023@gmail.com</div>
+    </div>
+  </footer>
+
+</body>
+</html>\n

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PalletGrid — Optimiseur de Palettisation 3D & Calcul de Charge</title>
+  <meta name="description" content="PalletGrid est l'outil professionnel d'ingénierie logistique pour l'optimisation de palettisation 3D, plans de charge ≥80%, normes UNE-EN 13698 et fiches A4 en PDF.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/app-icon.png">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-wrap">
+      <a href="index-fr.html" class="nav-brand">
+        <img src="assets/app-icon.png" alt="PalletGrid Icon" class="nav-logo">
+        <div>
+          <div class="nav-title">PalletGrid</div>
+          <div class="nav-subtitle">par Jacoor Logistique</div>
+        </div>
+      </a>
+      <ul class="nav-menu">
+        <li><a href="#features" class="nav-link">Fonctionnalités</a></li>
+        <li><a href="#standards" class="nav-link">Normes</a></li>
+        <li><a href="#gallery" class="nav-link">Captures</a></li>
+        <li><a href="support-fr.html" class="nav-link">Support</a></li>
+        <li><a href="privacy.html" class="nav-link">Confidentialité</a></li>
+        <li>
+          <span style="color: var(--primary-light); font-weight: 700; font-size: 13px;">🌐 FR</span>
+          <a href="index.html" style="font-size: 12px; color: var(--text-muted); margin-left: 4px;">ES</a>
+          <a href="index-en.html" style="font-size: 12px; color: var(--text-muted); margin-left: 4px;">EN</a>
+          <a href="index-de.html" style="font-size: 12px; color: var(--text-muted); margin-left: 4px;">DE</a>
+        </li>
+      </ul>
+      <a href="#download" class="nav-btn">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+        App Store
+      </a>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-glow"></div>
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="hero-tag">
+          <div class="hero-tag-pulse"></div>
+          GÉNIE LOGISTIQUE INDUSTRIEL V4
+        </div>
+        <h1 class="hero-title">
+          Optimiseur de Palettisation 3D & <span>Calcul de Charge</span>
+        </h1>
+        <p class="hero-lead">
+          Calculez instantanément les meilleurs plans de charge avec un taux d'occupation ≥ 80%, simulez le croisement de la Couche B en 3D interactif et éditez des fiches techniques vectorielles officielles A4 pour l'entrepôt et le transport.
+        </p>
+        <div class="hero-actions">
+          <a href="#download" class="btn-primary">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.62-.75 1.04-1.8 1.01-2.84-.96.04-2.13.64-2.79 1.41-.58.68-1.1 1.77-1.02 2.81 1.08.08 2.18-.63 2.8-1.38z"/></svg>
+            Disponible sur l'App Store
+          </a>
+          <a href="support-fr.html" class="btn-secondary">
+            Centre d'Assistance →
+          </a>
+        </div>
+        <div class="hero-badges">
+          <div class="badge-item">
+            <span class="badge-val">≥ 80%</span>
+            <span class="badge-lbl">Filtre d'Occupation</span>
+          </div>
+          <div class="badge-item">
+            <span class="badge-val">4 Types</span>
+            <span class="badge-lbl">EUR, USA, 1/2 & Sur mesure</span>
+          </div>
+          <div class="badge-item">
+            <span class="badge-val">7 Langues</span>
+            <span class="badge-lbl">FR, EN, ES, DE, IT, PT, RU</span>
+          </div>
+          <div class="badge-item">
+            <span class="badge-val">100%</span>
+            <span class="badge-lbl">Hors ligne & Sécurisé</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero-mockup-wrap">
+        <div class="hero-mockup-glow"></div>
+        <img src="assets/01_Visor_3D_Explosion.png" alt="PalletGrid 3D Visualiseur" class="hero-mockup-img">
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section" id="features">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Capacités Techniques</span>
+        <h2 class="section-title">Conçu pour la Chaîne d'Approvisionnement Exigeante</h2>
+        <p class="section-desc">Technologies de calcul géométrique et de simulation physique garantissant des palettes stables, homologuées et rentables.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box">⭐</div>
+          <h3 class="feature-title">Assistant de Configuration Guidé</h3>
+          <p class="feature-desc">Flux pas à pas pour saisir les cartons, leur poids et le choix de la palette avec conversion directe mm/pouces et kg/livres.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">📐</div>
+          <h3 class="feature-title">Plans avec Taux d'Occupation ≥ 80%</h3>
+          <p class="feature-desc">Filtre rigoureux écartant les combinaisons inefficaces. Plans longitudinaux, transversaux, mixtes à 2 et 3 blocs.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">🧱</div>
+          <h3 class="feature-title">Croisement Automatique (Couche B)</h3>
+          <p class="feature-desc">Agencement en quinconce entre étages pairs et impairs pour éviter le déversement de la charge sur route.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">🛡️</div>
+          <h3 class="feature-title">Contrôle Physique & Stabilité</h3>
+          <p class="feature-desc">Calcul exact du centre de gravité Z, du coefficient d'élancement (λ ≤ 1,8) et de l'angle critique de basculement (θ).</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">📦</div>
+          <h3 class="feature-title">Visualiseur Isométrique 3D Épuré</h3>
+          <p class="feature-desc">Rotation tactile à 360° et curseur d'éclatement des couches en hauteur pour inspecter chaque étage sans numéros distrayants.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon-box">📑</div>
+          <h3 class="feature-title">Fiche Technique Officielle A4 en PDF</h3>
+          <p class="feature-desc">Édite des dossiers d'expédition complets prêts à imprimer via AirPrint, partager par AirDrop ou archiver avec sceau de qualité.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STANDARDS -->
+  <section class="section" id="standards" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Normes Internationales</span>
+        <h2 class="section-title">Palettes Normalisées et Sur Mesure</h2>
+        <p class="section-desc">PalletGrid intègre les cotes officielles, tares et hauteurs de bois réglementaires.</p>
+      </div>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+        <div class="feature-card" style="border-color: rgba(16, 185, 129, 0.4);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-size: 28px;">🇪🇺</span>
+            <span style="background: rgba(16, 185, 129, 0.15); color: var(--primary-light); font-weight: 800; font-size: 11px; padding: 4px 10px; border-radius: 12px;">NORME EUROPÉENNE</span>
+          </div>
+          <h3 class="feature-title">Palette Europe UNE-EN 13698-1</h3>
+          <p class="feature-desc" style="margin-bottom: 20px;">Palette homologuée EPAL pour la grande distribution européenne.</p>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 14px; line-height: 2;">
+            <li>✓ <strong>Dimensions:</strong> 1200 × 800 mm</li>
+            <li>✓ <strong>Hauteur de bois:</strong> 145 mm (3 semelles & 9 dés)</li>
+            <li>✓ <strong>Tare officielle:</strong> 25,0 kg</li>
+            <li>✓ <strong>Tolérance:</strong> Débordement jusqu'à +20 mm</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-size: 28px;">🇺🇸</span>
+            <span style="background: rgba(255, 255, 255, 0.1); color: var(--text-main); font-weight: 800; font-size: 11px; padding: 4px 10px; border-radius: 12px;">NORME UNIVERSELLE</span>
+          </div>
+          <h3 class="feature-title">Palette Américaine UNE-EN 13698-2</h3>
+          <p class="feature-desc" style="margin-bottom: 20px;">Palette industrielle ISO 6780 utilisée mondialement pour les conteneurs maritimes.</p>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 14px; line-height: 2;">
+            <li>✓ <strong>Dimensions:</strong> 1200 × 1000 mm</li>
+            <li>✓ <strong>Hauteur de bois:</strong> 150 mm</li>
+            <li>✓ <strong>Tare officielle:</strong> 30,0 kg</li>
+            <li>✓ <strong>Capacité:</strong> Haute densité volumétrique</li>
+          </ul>
+        </div>
+        <div class="feature-card">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-size: 28px;">🏬</span>
+            <span style="background: rgba(255, 255, 255, 0.1); color: var(--text-main); font-weight: 800; font-size: 11px; padding: 4px 10px; border-radius: 12px;">RETAIL / DISPLAY</span>
+          </div>
+          <h3 class="feature-title">Demi-palette (Display)</h3>
+          <p class="feature-desc" style="margin-bottom: 20px;">Idéale pour les têtes de gondole, le retail et la livraison urbaine.</p>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 14px; line-height: 2;">
+            <li>✓ <strong>Dimensions:</strong> 800 × 600 mm</li>
+            <li>✓ <strong>Hauteur de bois:</strong> 140 mm</li>
+            <li>✓ <strong>Tare officielle:</strong> 15,0 kg</li>
+            <li>✓ <strong>Usage:</strong> Mise en rayon directe</li>
+          </ul>
+        </div>
+        <div class="feature-card" style="border-color: rgba(16, 185, 129, 0.3);">
+          <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+            <span style="font-size: 28px;">⚙️</span>
+            <span style="background: rgba(16, 185, 129, 0.15); color: var(--primary-light); font-weight: 800; font-size: 11px; padding: 4px 10px; border-radius: 12px;">SUR MESURE</span>
+          </div>
+          <h3 class="feature-title">Palette Personnalisée</h3>
+          <p class="feature-desc" style="margin-bottom: 20px;">Configurez n'importe quel gabarit sans contrainte de catalogue.</p>
+          <ul style="list-style: none; color: var(--text-muted); font-size: 14px; line-height: 2;">
+            <li>✓ <strong>Longueur & Largeur:</strong> Libres en millimètres</li>
+            <li>✓ <strong>Hauteur bois:</strong> Totalement personnalisable</li>
+            <li>✓ <strong>Tare manuelle:</strong> Poids de base précis</li>
+            <li>✓ <strong>Moteur:</strong> 3D et calcul en temps réel</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="section-tag">Captures d'Écran</span>
+        <h2 class="section-title">Interface PalletGrid V4</h2>
+        <p class="section-desc">Conçue pour les opérations d'entrepôt sur iPhone et iPad.</p>
+      </div>
+      <div class="gallery-wrap">
+        <div class="gallery-card">
+          <img src="assets/01_Visor_3D_Explosion.png" alt="Visualiseur 3D" class="gallery-thumb">
+          <div class="gallery-caption">Visualiseur 3D</div>
+          <div class="gallery-sub">Rotation 360° & vue éclatée</div>
+        </div>
+        <div class="gallery-card">
+          <img src="assets/02_Dossier_Ficha_Tecnica_PDF.png" alt="Fiche A4 PDF" class="gallery-thumb">
+          <div class="gallery-caption">Fiche Technique PDF</div>
+          <div class="gallery-sub">Plans, élévations et sceau</div>
+        </div>
+        <div class="gallery-card">
+          <img src="assets/03_Mosaicos_2D_Ocupacion80.png" alt="Plans 2D" class="gallery-thumb">
+          <div class="gallery-caption">Plans 2D (≥ 80%)</div>
+          <div class="gallery-sub">Contrôle du débord & KPIs</div>
+        </div>
+        <div class="gallery-card">
+          <img src="assets/04_Asistente_Guiado_Nuevo_Pallet.png" alt="Assistant Guidé" class="gallery-thumb">
+          <div class="gallery-caption">Assistant Guidé</div>
+          <div class="gallery-sub">mm/po, kg/lb & sur mesure</div>
+        </div>
+        <div class="gallery-card">
+          <img src="assets/05_Gestor_Fichas_Guardadas.png" alt="Fiches Sauvegardées" class="gallery-thumb">
+          <div class="gallery-caption">Fiches Sauvegardées</div>
+          <div class="gallery-sub">Archives locales & réouverture 3D</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section" id="download" style="text-align: center;">
+    <div class="container">
+      <div class="contact-box" style="margin: 0 auto;">
+        <h3>Optimisez vos chargements dès aujourd'hui</h3>
+        <p>Disponible sur l'App Store pour iPhone et iPad. Achat unique, sans compte obligatoire, sans publicité, 100% privé.</p>
+        <a href="https://apps.apple.com" target="_blank" class="contact-mail-btn">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.81-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M15.97 6.84c.62-.75 1.04-1.8 1.01-2.84-.96.04-2.13.64-2.79 1.41-.58.68-1.1 1.77-1.02 2.81 1.08.08 2.18-.63 2.8-1.38z"/></svg>
+          Télécharger sur l'App Store
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-brand">
+            <img src="assets/app-icon.png" alt="PalletGrid Logo" class="nav-logo">
+            <div>
+              <div class="nav-title">PalletGrid</div>
+              <div class="nav-subtitle">par Jacoor Logistique</div>
+            </div>
+          </div>
+          <p>Outil d'ingénierie pour le gerbage, l'optimisation volumétrique et la standardisation des palettes de transport.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#features">Fonctionnalités</a></li>
+            <li><a href="#standards">Normes</a></li>
+            <li><a href="#gallery">Captures</a></li>
+            <li><a href="#download">App Store</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Légal & Support</h4>
+          <ul>
+            <li><a href="support-fr.html">Centre d'Assistance</a></li>
+            <li><a href="privacy.html">Politique de Confidentialité</a></li>
+            <li><a href="mailto:ayeneso2023@gmail.com">Contact E-mail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>© 2026 Jacoor Logistique. Tous droits réservés.</div>
+        <div>Conforme aux directives Apple App Store Review.</div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>\n
